@@ -1,38 +1,38 @@
 <script setup>
-import { onMounted, computed } from 'vue';
+import { onMounted, computed } from 'vue'
 
 const props = defineProps({
   isMobile: {
     type: Boolean,
-    default: false,
+    default: false
   }
-});
+})
 
 const aspectRatio = computed(() => {
   return props.isMobile ? '7 / 8' : '16 / 9'
-});
-
-let workPreviews;
-onMounted(() => {
-  workPreviews = document.querySelectorAll('.work-item');
-
-  window.addEventListener('scroll', checkPreviewsScroll);
-  window.addEventListener('load', checkPreviewsScroll);
 })
 
-function checkPreviewsScroll() {
+let workPreviews
+onMounted(() => {
+  workPreviews = document.querySelectorAll('.work-item')
+
+  window.addEventListener('scroll', checkPreviewsScroll)
+  window.addEventListener('load', checkPreviewsScroll)
+})
+
+function checkPreviewsScroll () {
   workPreviews.forEach((element) => {
-    const elementTop = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top
+    const windowHeight = window.innerHeight
 
     // the multiplier for the window height to determine where in the window height should
     // the element be rendered
-    const threshold = 0.7;
+    const threshold = 0.7
 
     if (elementTop < windowHeight * threshold) {
-      element.classList.add('show');
+      element.classList.add('show')
     }
-  });
+  })
 }
 </script>
 
