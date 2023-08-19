@@ -1,40 +1,4 @@
 <script setup>
-import { onMounted } from 'vue'
-
-onMounted(() => {
-  drawExpand()
-})
-
-function expandOnClick (event) {
-  event.stopPropagation()
-  const toExpand = document.getElementById('header-items')
-  toExpand.classList.toggle('expanded')
-}
-
-function drawExpand () {
-  const width = 300
-  const height = 200
-  const lineWidth = width * 0.1
-  const gap = (height - lineWidth * 3) / 2
-
-  const canvas = document.getElementById('expand')
-  const ctx = canvas.getContext('2d')
-
-  canvas.setAttribute('width', width)
-  canvas.setAttribute('height', height)
-
-  ctx.strokeStyle = '#de81a4'
-  ctx.lineCap = 'round'
-  ctx.lineWidth = lineWidth
-
-  for (let i = 0; i < 3; i++) {
-    const y = i * ctx.lineWidth + i * gap + ctx.lineWidth / 2
-    ctx.moveTo(ctx.lineWidth + i * gap, y)
-    ctx.lineTo(width - ctx.lineWidth * 0.67, y)
-  }
-
-  ctx.stroke()
-}
 
 document.addEventListener('click', (event) => {
   const headerItems = document.getElementById('header-items')
@@ -52,7 +16,11 @@ document.addEventListener('click', (event) => {
     <div>
       <div class="header-logo"></div>
       <h1>Louise Lalu</h1>
-      <canvas @click="expandOnClick" id="expand"></canvas>
+      <div class="expand-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <div class="header-items-overlay">
       <div id="header-items" class="header-items">
@@ -95,10 +63,29 @@ h1 {
   font-weight: 600;
 }
 
-canvas {
-  height: 2em;
-  width: 3em;
+.expand-button {
+  height: 1.5em;
+  width: 2em;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.expand-button span {
+  border-bottom: 0.25em solid var(--color-primary);
+  border-radius: 1em;
+  width: 70%;
+  align-self: end;
+}
+
+.expand-button span:nth-child(2) {
+  align-self: center;
+}
+
+.expand-button span:last-child {
+  align-self: start;
 }
 
 .header-items {
