@@ -1,49 +1,49 @@
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
 
 onMounted(() => {
-  drawExpand();
-});
+  drawExpand()
+})
 
-function expandOnClick(event) {
-  event.stopPropagation();
-  const toExpand = document.getElementById('header-items');
-  toExpand.classList.toggle('expanded');
+function expandOnClick (event) {
+  event.stopPropagation()
+  const toExpand = document.getElementById('header-items')
+  toExpand.classList.toggle('expanded')
 }
 
-function drawExpand() {
-  const width = 300;
-  const height = 200;
-  const lineWidth = width * 0.1;
-  const gap = (height - lineWidth * 3) / 2;
+function drawExpand () {
+  const width = 300
+  const height = 200
+  const lineWidth = width * 0.1
+  const gap = (height - lineWidth * 3) / 2
 
-  const canvas = document.getElementById("expand");
-  const ctx = canvas.getContext("2d");
+  const canvas = document.getElementById('expand')
+  const ctx = canvas.getContext('2d')
 
-  canvas.setAttribute("width", width);
-  canvas.setAttribute("height", height);
+  canvas.setAttribute('width', width)
+  canvas.setAttribute('height', height)
 
-  ctx.strokeStyle = '#de81a4';
-  ctx.lineCap = 'round';
-  ctx.lineWidth = lineWidth;
+  ctx.strokeStyle = '#de81a4'
+  ctx.lineCap = 'round'
+  ctx.lineWidth = lineWidth
 
   for (let i = 0; i < 3; i++) {
-    let y = i * ctx.lineWidth + i * gap + ctx.lineWidth / 2;
-    ctx.moveTo(ctx.lineWidth + i * gap, y);
-    ctx.lineTo(width - ctx.lineWidth * 0.67, y);
+    const y = i * ctx.lineWidth + i * gap + ctx.lineWidth / 2
+    ctx.moveTo(ctx.lineWidth + i * gap, y)
+    ctx.lineTo(width - ctx.lineWidth * 0.67, y)
   }
 
-  ctx.stroke();
+  ctx.stroke()
 }
 
 document.addEventListener('click', (event) => {
-  const headerItems = document.getElementById('header-items');
+  const headerItems = document.getElementById('header-items')
   const clickedElement = event.target
 
   if (!headerItems.contains(clickedElement)) {
-    headerItems.classList.remove('expanded');
+    headerItems.classList.remove('expanded')
   }
-});
+})
 
 </script>
 
@@ -79,7 +79,7 @@ header>div:nth-child(1) {
   width: 100%;
   padding: 4vh 6vw 2.5vh 6vw;
   background: var(--color-background);
-  box-shadow: 0 4px 8px 0 rgba(200,200,200,0.2);
+  box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2);
 }
 
 .header-logo {
@@ -112,7 +112,7 @@ canvas {
   transform: translateY(-101%);
 }
 
-.header-items > * {
+.header-items>* {
   background-color: var(--color-primary);
   color: var(--color-background);
 }

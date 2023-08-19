@@ -1,16 +1,16 @@
 <script setup>
-import Header from "../../components/Header.vue";
-import TheFirst from "./TheFirst.vue";
-import TheSecond from "./TheSecond.vue";
-import { onMounted } from "vue";
+import Header from '../../components/HeaderComponent.vue'
+import TheFirst from './TheFirst.vue'
+import TheSecond from './TheSecond.vue'
+import { onMounted } from 'vue'
 
 onMounted(() => {
   window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    const background = document.getElementById('background');
-    background.style.transform = `translateY(${scrolled * 0.15}px)`;
-  });
-});
+    const scrolled = window.scrollY
+    const background = document.getElementById('background')
+    background.style.transform = `translateY(${scrolled * 0.15}px)`
+  })
+})
 
 </script>
 
