@@ -42,12 +42,14 @@ document.addEventListener('click', (event) => {
 
 <style scoped>
 header {
+  pointer-events: none;
   position: fixed;
   height: 100%;
   width: 100%;
 }
 
 header>div:nth-child(1) {
+  pointer-events: all;
   display: flex;
   align-items: center;
   width: 100%;

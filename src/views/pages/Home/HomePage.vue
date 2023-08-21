@@ -2,6 +2,7 @@
 import Header from '../../components/HeaderComponent.vue'
 import TheFirst from './TheFirst.vue'
 import TheSecond from './TheSecond.vue'
+import ContactComponent from '../../components/ContactComponent.vue'
 import { onMounted } from 'vue'
 
 onMounted(() => {
@@ -28,11 +29,13 @@ onMounted(() => {
   <main>
     <TheFirst class="first-section"/>
     <TheSecond class="second-section"/>
+    <ContactComponent/>
   </main>
 </template>
 
 <style scoped>
 .background-container {
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;

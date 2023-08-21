@@ -26,7 +26,7 @@ defineProps({
 <template>
   <div>
     <label :for="fieldname">{{ label }}</label>
-    <input v-if="!isArea" :type="type" :name="fieldname" :placeholder="placeholder">
+    <input v-if="!isArea" id="input" :type="type" :name="fieldname" :placeholder="placeholder">
     <textarea  v-else :name="fieldname" :placeholder="placeholder"></textarea>
   </div>
 </template>
@@ -38,17 +38,21 @@ div {
 }
 
 label {
+  color: var(--color-primary);
   font-weight: 700;
-  font-size: 0.7em;
-  margin-bottom: 8px;
+  font-size: 0.75em;
+  margin-bottom: 0.4em;
 }
 
 input {
+  background-color: var(--color-neutral-100);
   font-size: 0.9em;
   border: unset;
   border-radius: 8px;
   height: 3.5em;
   padding: 0 1em;
+  font-family: 'Raleway';
+  font-weight: 500;
 }
 
 input::placeholder {
@@ -56,6 +60,7 @@ input::placeholder {
 }
 
 textarea {
+  background-color: var(--color-neutral-100);
   height: 12em;
   border: unset;
   border-radius: 8px;
