@@ -6,7 +6,7 @@
   --color-background-dark: #f0f0f0;
   --color-neutral: #B0B8BF;
   --color-yellow: #FFCC33;
---color-primary: #de81a4;
+  --color-primary: #de81a4;
   --color-secondary: #95bdef;
   --color-secondary-dark: #1b5eb1;
   --color-primary-dark: #b46482;
@@ -34,10 +34,16 @@ button {
   font-family: 'Raleway';
 }
 
-input[type="text"], input[type="password"], input[type="email"], textarea {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
   outline: none;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
   outline: var(--color-primary) solid 1.5px;
 }
