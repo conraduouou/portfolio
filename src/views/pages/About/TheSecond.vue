@@ -1,10 +1,38 @@
 <script setup>
 const tags = [
-  'ui design', 'ux design', 'prototyping',
-  'branding', 'html/css', 'wireframing',
-  'information architecture', 'user research',
-  'user interviews', 'leadership', 'figma', 'adobe suite'
-];
+  {
+    id: 1,
+    text: 'ui design'
+  },
+  {
+    id: 2,
+    text: 'ux design'
+  },
+  {
+    id: 3,
+    text: 'prototyping'
+  },
+  {
+    id: 4,
+    text: 'branding'
+  },
+  {
+    id: 5,
+    text: 'html/css'
+  },
+  {
+    id: 6,
+    text: 'wireframing'
+  },
+  {
+    id: 7,
+    text: 'information architecture'
+  },
+  {
+    id: 7,
+    text: 'figma'
+  }
+]
 </script>
 
 <template>
@@ -20,7 +48,7 @@ const tags = [
       </p>
     </div>
     <div class="section-tags">
-      <div class="section-tag" v-for="tag in tags"> {{ tag }} </div>
+      <div class="section-tag" v-for="tag in tags" :key="tag.id"> {{ tag.text }} </div>
     </div>
   </section>
 </template>

@@ -2,11 +2,11 @@
 defineProps({
   fieldname: {
     type: String,
-    required: true,
+    required: true
   },
   label: {
     type: String,
-    required: true,
+    required: true
   },
   placeholder: {
     type: String,
@@ -18,7 +18,7 @@ defineProps({
   },
   isArea: {
     type: Boolean,
-    default: false,
+    default: false
   }
 })
 </script>

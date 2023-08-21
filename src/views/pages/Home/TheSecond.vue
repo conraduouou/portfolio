@@ -1,5 +1,5 @@
 <script setup>
-import WorkItem from "../../components/WorkItem.vue";
+import WorkItem from '../../components/WorkItem.vue'
 </script>
 
 <template>
@@ -45,6 +45,6 @@ h2 {
 }
 
 .work-item:not(:last-child) {
-  margin-bottom: 3em; 
+  margin-bottom: 3em;
 }
 </style>

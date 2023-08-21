@@ -15,7 +15,7 @@
         bold designs. He is a natural problem solver in the design space so everyong went to him if
         they were stuck on a feature or flow. He has an arsenal of design skills including animation
         graphic design. Not to mention, Seb was a design team lead, which means he managed a full team
-        of both onshore and offshore designs reviewing and providing feedback on all of their designs... 
+        of both onshore and offshore designs reviewing and providing feedback on all of their designs...
         Any business would be lucky to have him."
       </p>
     </div>
