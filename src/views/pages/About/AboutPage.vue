@@ -2,7 +2,7 @@
 import TheFirst from './TheFirst.vue'
 import TheSecond from './TheSecond.vue'
 // import TheThird from './TheThird.vue'
-// import TheFourth from './TheFourth.vue'
+import ContactComponent from '../../components/ContactComponent.vue'
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import TheSecond from './TheSecond.vue'
     <TheFirst class="first-section"/>
     <TheSecond/>
     <!-- <TheThird/> -->
-    <!-- <TheFourth/> -->
+    <ContactComponent class="contact-section"/>
   </main>
 </template>
 
@@ -20,5 +20,9 @@ main {
   flex-direction: column;
   gap: 10vh;
   padding-bottom: 15vh;
+}
+
+.contact-section {
+  margin: 0 6vw;
 }
 </style>
