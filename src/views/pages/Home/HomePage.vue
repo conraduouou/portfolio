@@ -17,7 +17,9 @@ onMounted(() => {
 <template>
   <div class="background-container">
     <div id="background" class="background">
-      <div class="circle"></div>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
     </div>
   </div>
 
@@ -31,26 +33,63 @@ onMounted(() => {
 
 <style scoped>
 .background-container {
-  z-index: -1;
-}
-
-.background {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  filter: blur(8em);
+  filter: blur(4em);
 }
 
-.circle {
+.background {
+  width: 100%;
+  height: 100%;
+}
+
+.circle-1 {
   position: absolute;
-  height: 60%;
-  width: 60%;
-  right: -25%;
+  height: 60vh;
+  width: 60vh;
+  right: -50%;
   top: -10%;
   background-color: var(--color-secondary);
+  opacity: 60%;
   border-radius: 50%;
+  transform-origin: 45% 65%;
+  animation: 4s linear 0s infinite normal both running special-rotate;
+}
+.circle-2 {
+  position: absolute;
+  height: 70vh;
+  width: 70vh;
+  left: -80%;
+  top: 60%;
+  background-color: var(--color-neutral);
+  border-radius: 50%;
+  transform-origin: 40% 35%;
+  animation: 8s linear 0s infinite normal both running special-rotate;
+}
+
+.circle-3 {
+  position: absolute;
+  height: 15vh;
+  width: 15vh;
+  left: 2%;
+  top: 10%;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  transform-origin: bottom right;
+  animation: 8s linear 0s infinite normal both running special-rotate;
+}
+
+@keyframes special-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 main {

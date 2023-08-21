@@ -4,8 +4,11 @@
 :root {
   --color-background: #fcfcfc;
   --color-background-dark: #f0f0f0;
-  --color-primary: #de81a4;
+  --color-neutral: #B0B8BF;
+  --color-yellow: #FFCC33;
+--color-primary: #de81a4;
   --color-secondary: #95bdef;
+  --color-secondary-dark: #1b5eb1;
   --color-primary-dark: #b46482;
 
   --section-padding: 0 max(60px, 10vw);
