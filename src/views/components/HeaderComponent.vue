@@ -30,8 +30,8 @@ document.addEventListener('click', (event) => {
     </div>
     <div class="header-items-overlay">
       <div id="header-items" class="header-items">
-        <span class="header-item">About</span>
-        <span class="header-item">Contact</span>
+        <a href="#/about" class="header-item">About</a>
+        <a href="#" class="header-item">Contact</a>
         <div class="button-container">
           <button type="button" class="header-button">View Work</button>
         </div>
@@ -116,6 +116,7 @@ h1 {
 .header-item {
   padding: 20px 0;
   text-align: center;
+  text-decoration: none;
   font-weight: 600;
   width: 100%;
   border-bottom: 1.5px solid var(--color-background);
