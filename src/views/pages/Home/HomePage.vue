@@ -30,7 +30,7 @@ onUnmounted(() => {
   </div>
   <main>
     <TheFirst class="first-section" />
-    <TheSecond class="second-section" />
+    <TheSecond id="works" class="second-section" />
     <ContactComponent id="contact" />
   </main>
 </template>

@@ -6,6 +6,11 @@ function expandOnClick (event) {
   toExpand.classList.toggle('expanded')
 }
 
+function onViewWorksClick () {
+  // set this to #works in the future when routing is learned
+  window.location.hash = '#/'
+}
+
 document.addEventListener('click', (event) => {
   const headerItems = document.getElementById('header-items')
   const clickedElement = event.target
@@ -33,7 +38,7 @@ document.addEventListener('click', (event) => {
         <a href="#/about" class="header-item">About</a>
         <a href="#" class="header-item">Contact</a>
         <div class="button-container">
-          <button type="button" class="header-button">View Work</button>
+          <button @click="onViewWorksClick" type="button" class="header-button">View Work</button>
         </div>
       </div>
     </div>
