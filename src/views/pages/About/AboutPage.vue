@@ -19,7 +19,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10vh;
-  padding: 0 6vw;
   padding-bottom: 15vh;
 }
 </style>

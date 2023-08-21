@@ -2,23 +2,23 @@
 const tags = [
   {
     id: 1,
-    text: 'ui design'
+    text: 'flutter'
   },
   {
     id: 2,
-    text: 'ux design'
+    text: 'html/css'
   },
   {
     id: 3,
-    text: 'prototyping'
+    text: 'javascript'
   },
   {
     id: 4,
-    text: 'branding'
+    text: 'vue'
   },
   {
     id: 5,
-    text: 'html/css'
+    text: 'python'
   },
   {
     id: 6,
@@ -26,11 +26,11 @@ const tags = [
   },
   {
     id: 7,
-    text: 'information architecture'
+    text: 'figma'
   },
   {
-    id: 7,
-    text: 'figma'
+    id: 8,
+    text: 'ui/ux design'
   }
 ]
 </script>
@@ -48,13 +48,50 @@ const tags = [
       </p>
     </div>
     <div class="section-tags">
-      <div class="section-tag" v-for="tag in tags" :key="tag.id"> {{ tag.text }} </div>
+      <span class="section-tag" v-for="tag in tags" :key="tag.id"> {{ tag.text }} </span>
     </div>
   </section>
 </template>
 
 <style scoped>
 section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: 5vh 6vw 7vh 6vw;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: min(5vw, 1.25em);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em 0.75em;
+}
+
+.section-tag {
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid var(--color-background);
+  border-radius: 8px;
+  padding: 0.56em;
+  padding-bottom: 0.9em;
+}
+
+/* section {
   height: var(--section-height);
   display: flex;
   justify-content: space-between;
@@ -78,21 +115,5 @@ section {
 .section-content p {
   font-size: 1.25em;
   line-height: 1.5em;
-}
-
-.section-tags {
-  display: flex;
-  flex-wrap: wrap;
-  width: clamp(240px, 40vw, 560px);
-  gap: 8px 12px;
-}
-
-.section-tag {
-  text-transform: uppercase;
-  font-weight: 600;
-  border: 1px solid var(--color-background);
-  border-radius: 8px;
-  padding: 10px;
-  padding-bottom: 14px
-}
+} */
 </style>

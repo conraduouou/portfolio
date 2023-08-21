@@ -16,6 +16,7 @@
 
 <style scoped>
 section {
+  padding: 0 6vw;
   padding-top: 20vh;
   display: flex;
   flex-direction: column;
