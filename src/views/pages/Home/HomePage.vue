@@ -30,6 +30,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.background-container {
+  z-index: -1;
+}
+
 .background {
   position: fixed;
   top: 0;
@@ -37,7 +41,6 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   filter: blur(8em);
-  z-index: -1;
 }
 
 .circle {

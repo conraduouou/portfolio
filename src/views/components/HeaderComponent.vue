@@ -1,5 +1,11 @@
 <script setup>
 
+function expandOnClick (event) {
+  event.stopPropagation()
+  const toExpand = document.getElementById('header-items')
+  toExpand.classList.toggle('expanded')
+}
+
 document.addEventListener('click', (event) => {
   const headerItems = document.getElementById('header-items')
   const clickedElement = event.target
@@ -16,7 +22,7 @@ document.addEventListener('click', (event) => {
     <div>
       <div class="header-logo"></div>
       <h1>Louise Lalu</h1>
-      <div class="expand-button">
+      <div @click="expandOnClick" class="expand-button">
         <span></span>
         <span></span>
         <span></span>
