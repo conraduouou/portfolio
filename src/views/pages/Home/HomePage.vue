@@ -2,14 +2,20 @@
 import TheFirst from './TheFirst.vue'
 import TheSecond from './TheSecond.vue'
 import ContactComponent from '../../components/ContactComponent.vue'
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
+
+function handleScroll () {
+  const scrolled = window.scrollY
+  const background = document.getElementById('background')
+  background.style.transform = `translateY(${scrolled * 0.15}px)`
+}
 
 onMounted(() => {
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY
-    const background = document.getElementById('background')
-    background.style.transform = `translateY(${scrolled * 0.15}px)`
-  })
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
 })
 
 </script>
@@ -23,9 +29,9 @@ onMounted(() => {
     </div>
   </div>
   <main>
-    <TheFirst class="first-section"/>
-    <TheSecond class="second-section"/>
-    <ContactComponent/>
+    <TheFirst class="first-section" />
+    <TheSecond class="second-section" />
+    <ContactComponent id="contact" />
   </main>
 </template>
 
@@ -58,6 +64,7 @@ onMounted(() => {
   transform-origin: 45% 65%;
   animation: 4s linear 0s infinite normal both running special-rotate;
 }
+
 .circle-2 {
   position: absolute;
   height: 70vh;
@@ -86,6 +93,7 @@ onMounted(() => {
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(360deg);
   }

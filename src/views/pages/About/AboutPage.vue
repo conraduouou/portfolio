@@ -1,5 +1,5 @@
 <script setup>
-import Header from '../../components/Header.vue'
+import Header from '../../components/HeaderComponent.vue'
 import TheFirst from './TheFirst.vue'
 import TheSecond from './TheSecond.vue'
 import TheThird from './TheThird.vue'
