@@ -1,5 +1,4 @@
 <script setup>
-import Header from '../../components/HeaderComponent.vue'
 import TheFirst from './TheFirst.vue'
 import TheSecond from './TheSecond.vue'
 import ContactComponent from '../../components/ContactComponent.vue'
@@ -23,9 +22,6 @@ onMounted(() => {
       <div class="circle-3"></div>
     </div>
   </div>
-
-  <Header/>
-
   <main>
     <TheFirst class="first-section"/>
     <TheSecond class="second-section"/>
