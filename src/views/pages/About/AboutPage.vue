@@ -1,21 +1,25 @@
 <script setup>
-import Header from '../../components/HeaderComponent.vue'
 import TheFirst from './TheFirst.vue'
 import TheSecond from './TheSecond.vue'
-import TheThird from './TheThird.vue'
-import TheFourth from './TheFourth.vue'
+// import TheThird from './TheThird.vue'
+// import TheFourth from './TheFourth.vue'
 </script>
 
 <template>
-  <Header/>
-
   <main>
-    <TheFirst/>
+    <TheFirst class="first-section"/>
     <TheSecond/>
-    <TheThird/>
-    <TheFourth/>
+    <!-- <TheThird/> -->
+    <!-- <TheFourth/> -->
   </main>
 </template>
 
 <style scoped>
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  padding: 0 6vw;
+  padding-bottom: 15vh;
+}
 </style>

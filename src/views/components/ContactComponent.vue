@@ -3,7 +3,7 @@ import TextField from './TextField.vue'
 </script>
 
 <template>
-    <div class="container">
+    <section>
         <h2>Want to get in touch?</h2>
         <form action="#">
             <TextField class="textfield" fieldname="name" label="Name" placeholder="Please enter your name" />
@@ -12,11 +12,11 @@ import TextField from './TextField.vue'
                 :is-area="true" />
             <button type="submit">Submit</button>
         </form>
-    </div>
+    </section>
 </template>
 
 <style scoped>
-.container {
+section {
     background-color: var(--color-background);
     box-shadow: 0px 6px 8px 0px rgba(60, 60, 60, 0.12);
     border-radius: 1em;

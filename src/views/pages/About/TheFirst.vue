@@ -16,6 +16,33 @@
 
 <style scoped>
 section {
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-image {
+  border-radius: 0.5em;
+  width: min(80%, 400px);
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-primary);
+  margin-bottom: 2em;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+/* section {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,6 +68,6 @@ section {
 
 .section-content p {
   font-size: 1.5em;
-}
+} */
 
 </style>
