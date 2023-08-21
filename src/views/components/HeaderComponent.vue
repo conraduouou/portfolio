@@ -52,7 +52,8 @@ header>div:nth-child(1) {
   align-items: center;
   width: 100%;
   padding: 4vh 6vw 2.5vh 6vw;
-  backdrop-filter: blur(2em);
+  backdrop-filter: blue(2em);
+  -webkit-backdrop-filter: blur(2em);
   box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2);
 }
 

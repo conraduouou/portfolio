@@ -5,6 +5,10 @@ const props = defineProps({
   isMobile: {
     type: Boolean,
     default: false
+  },
+  assetUrl: {
+    type: String,
+    required: true
   }
 })
 
@@ -38,7 +42,7 @@ function checkPreviewsScroll () {
 
 <template>
   <div class="work-item">
-    <div class="work-preview" :style="`--aspect-ratio: ` + aspectRatio"></div>
+    <div class="work-preview" :style="`--aspect-ratio: ` + aspectRatio  + `; --url: url(` + assetUrl  + `)`"></div>
     <p class="work-description">
       <slot></slot>
     </p>
@@ -60,9 +64,11 @@ function checkPreviewsScroll () {
   width: min(100%, 400px);
   margin-bottom: 1.25em;
   aspect-ratio: var(--aspect-ratio);
-  background: linear-gradient(180deg, var(--color-secondary) 85%, transparent);
+  background-image: var(--url);
+  background-size: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  mask-image: linear-gradient(180deg, #000000 85%, transparent);
 }
 
 .show {
