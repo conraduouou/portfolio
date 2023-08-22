@@ -13,7 +13,7 @@ const props = defineProps({
 })
 
 const aspectRatio = computed(() => {
-  return props.isMobile ? '7 / 8' : '16 / 9'
+  return props.isMobile ? '7 / 10' : '16 / 9'
 })
 
 let workPreviews
@@ -81,5 +81,21 @@ function checkPreviewsScroll () {
   font-weight: 600;
   font-size: 0.92em;
   line-height: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .work-item {
+    width: min(calc(100vw * 3 / 8), 400px);
+  }
+
+  .work-preview {
+    width: 100%;
+    margin-bottom: 2.4em;
+  }
+
+  .work-description {
+    text-align: center;
+    width: auto;
+  }
 }
 </style>

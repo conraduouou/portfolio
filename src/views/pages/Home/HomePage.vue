@@ -136,6 +136,10 @@ main {
     margin-bottom: 20vh;
   }
 
+  .second-section {
+    margin-bottom: 20vh;
+  }
+
   .circle-1 {
     right: -30%;
     top: 25%;

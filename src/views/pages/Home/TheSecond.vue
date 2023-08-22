@@ -12,10 +12,6 @@ import WorkItem from '../../components/WorkItem.vue'
       <WorkItem class="work-item" :is-mobile=true :asset-url="'/src/views/assets/images/nft.png'">
         This was a side hustle offered to me by my co-worker, done in two (2) weeks!
       </WorkItem>
-      <WorkItem class="work-item" :asset-url="'/src/views/assets/images/hospital.png'">
-        This was one of my projects in my 2nd year in college which allowed me to be
-        proficient in state as well as architecture management in Flutter.
-      </WorkItem>
       <WorkItem class="work-item" :is-mobile=true :asset-url="'/src/views/assets/images/toolmart.png'">
         This was another of my projects in my 2nd year as well, exploring more performance
         optimizations and animations in Flutter. I also learned how to create an API using
@@ -25,6 +21,10 @@ import WorkItem from '../../components/WorkItem.vue'
         This was my project for my software engineering subject, which was also done using
         Flutter. By this time, I was exploring more state management options as well as
         implementing API locally using xAMPP.
+      </WorkItem>
+      <WorkItem class="work-item" :asset-url="'/src/views/assets/images/hospital.png'">
+        This was one of my projects in my 2nd year in college which allowed me to be
+        proficient in state as well as architecture management in Flutter.
       </WorkItem>
       <WorkItem class="work-item" :asset-url="'/src/views/assets/images/diligens.png'">
         This was my first major web development project that pushed me to learn HTML, CSS,
@@ -43,12 +43,23 @@ section {
 
 h2 {
   font-weight: 700;
-  margin-bottom: 1.25em;
+  font-size: 2em;
+  margin-bottom: 2.5rem;
 }
 
 .work-items {
   display: flex;
   flex-direction: column;
   gap: 3em;
+}
+
+@media screen and (min-width: 768px) {
+  .work-items {
+    display: flex;
+    justify-content: center;
+    gap: 4.5em 4em;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 </style>
