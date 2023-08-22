@@ -25,7 +25,7 @@ document.addEventListener('click', (event) => {
   <header id="header">
     <div>
       <div class="header-logo"></div>
-      <h1>Louise Lalu</h1>
+      <a href="#/" class="header-name">Louise Lalu</a>
       <div @click="expandOnClick" class="expand-button">
         <span></span>
         <span></span>
@@ -72,7 +72,9 @@ header>div:nth-child(1) {
   border-radius: 0.25em;
 }
 
-h1 {
+.header-name {
+  text-decoration: none;
+  color: var(--color-primary);
   font-size: 1em;
   font-weight: 600;
 }
