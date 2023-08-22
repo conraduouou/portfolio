@@ -85,7 +85,7 @@ function checkPreviewsScroll () {
 
 @media screen and (min-width: 768px) {
   .work-item {
-    width: min(calc(100vw * 3 / 8), 400px);
+    width: min(calc(100vw * 3 / 8), 320px);
   }
 
   .work-preview {

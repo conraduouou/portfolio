@@ -51,4 +51,30 @@ button {
   padding: 1em 2.8em;
   align-self: center;
 }
+
+@media screen and (min-width: 768px) {
+  section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5em;
+    padding: 6vw 8vw 10vw 8vw;
+  }
+
+  h2 {
+    font-size: 3.25em;
+    font-weight: 700;
+    text-align: left;
+    flex-shrink: 0;
+    width: calc(100vw * 2 / 5);
+  }
+
+  form {
+    width: 100%;
+  }
+
+  button {
+    margin-top: 1.5em;
+    align-self: start;
+  }
+}
 </style>

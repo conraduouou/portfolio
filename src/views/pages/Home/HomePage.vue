@@ -134,6 +134,7 @@ main {
   .first-section {
     padding-top: 25vh;
     margin-bottom: 20vh;
+    height: 80vh;
   }
 
   .second-section {
