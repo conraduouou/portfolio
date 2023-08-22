@@ -130,6 +130,7 @@ main {
 @media screen and (min-width: 768px) {
   main {
     padding: 0 4vw;
+    padding-bottom: 15vh;
   }
   .first-section {
     padding-top: 25vh;
