@@ -36,7 +36,7 @@ document.addEventListener('click', (event) => {
     <div class="header-items-overlay">
       <div id="header-items" class="header-items">
         <a href="#/about" class="header-item">About</a>
-        <a href="#" class="header-item">Contact</a>
+        <a href="#/#contact" class="header-item">Contact</a>
         <div class="button-container">
           <button @click="onViewWorksClick" type="button" class="header-button">View Work</button>
         </div>
