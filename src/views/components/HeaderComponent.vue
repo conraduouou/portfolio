@@ -164,7 +164,7 @@ header>div:nth-child(1) {
   background-color: var(--color-background-dark);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   header {
     display: flex;
     height: auto;

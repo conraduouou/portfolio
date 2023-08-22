@@ -126,4 +126,10 @@ main {
   position: relative;
   top: -20vh;
 }
+
+@media screen and (min-width: 768px) {
+  .first-section {
+    padding-top: 25vh;
+  }
+}
 </style>
