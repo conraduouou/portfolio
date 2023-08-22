@@ -128,8 +128,29 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    padding: 0 4vw;
+  }
   .first-section {
     padding-top: 25vh;
+    margin-bottom: 20vh;
+  }
+
+  .circle-1 {
+    right: -30%;
+    top: 25%;
+  }
+
+  .circle-2 {
+    left: auto;
+    right: -23%;
+    top: 64%;
+  }
+
+  .circle-3 {
+    left: auto;
+    right: 10%;
+    top: 10%;
   }
 }
 </style>
