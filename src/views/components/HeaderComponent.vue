@@ -7,8 +7,7 @@ function expandOnClick (event) {
 }
 
 function onViewWorksClick () {
-  // set this to #works in the future when routing is learned
-  window.location.hash = '#/'
+  window.location.hash = '#/#works'
 }
 
 document.addEventListener('click', (event) => {
@@ -35,10 +34,11 @@ document.addEventListener('click', (event) => {
     </div>
     <div class="header-items-overlay">
       <div id="header-items" class="header-items">
+        <a href="#/" class="header-item">Home</a>
         <a href="#/about" class="header-item">About</a>
         <a href="#/#contact" class="header-item">Contact</a>
         <div class="button-container">
-          <button @click="onViewWorksClick" type="button" class="header-button">View Work</button>
+          <button @click="onViewWorksClick" type="button" class="header-button">View Works</button>
         </div>
       </div>
     </div>

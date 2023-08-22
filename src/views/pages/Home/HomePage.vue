@@ -30,6 +30,7 @@ onUnmounted(() => {
   </div>
   <main>
     <TheFirst class="first-section" />
+    <span id="works-start"></span>
     <TheSecond id="works" class="second-section" />
     <span id="contact-start"></span>
     <ContactComponent id="contact" />
@@ -114,6 +115,11 @@ main {
 
 .second-section {
   margin-bottom: 10vh;
+}
+
+#works-start {
+  position: relative;
+  top: -20vh;
 }
 
 #contact-start {
