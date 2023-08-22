@@ -22,7 +22,19 @@ main {
   padding-bottom: 15vh;
 }
 
+.first-section {
+  padding: 0 6vw;
+  padding-top: 20vh;
+}
+
 .contact-section {
   margin: 0 6vw;
+}
+
+@media screen and (min-width: 768px) {
+  .first-section {
+    padding: 20vh 4vw 0 10vw;
+    height: 80vh;
+  }
 }
 </style>

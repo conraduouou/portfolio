@@ -17,8 +17,6 @@
 
 <style scoped>
 section {
-  padding: 0 6vw;
-  padding-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,42 +32,37 @@ section {
 
 h2 {
   font-size: 3em;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 0.75rem;
 }
 
 p {
+  font-weight: 600;
   font-size: 1.25em;
   text-align: center;
 }
 
-/* section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: var(--section-height);
-  padding: var(--section-padding);
+@media screen and (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10vw;
+  }
+
+  .section-image {
+    height: 40vh;
+    width: 40vh;
+    margin: 0;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
 }
-
-.section-image {
-  height: clamp(400px, 40vh, 600px);
-  width: clamp(320px, 32vw, 480px);
-  background-color: var(--color-primary);
-}
-
-.section-content {
-  width: clamp(300px, 40vw, 600px);
-}
-
-.section-content h2 {
-  font-size: 4em;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
-
-.section-content p {
-  font-size: 1.5em;
-} */
-
 </style>
