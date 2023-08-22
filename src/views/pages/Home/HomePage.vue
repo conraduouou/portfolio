@@ -31,6 +31,7 @@ onUnmounted(() => {
   <main>
     <TheFirst class="first-section" />
     <TheSecond id="works" class="second-section" />
+    <span id="contact-start"></span>
     <ContactComponent id="contact" />
   </main>
 </template>
@@ -102,12 +103,21 @@ onUnmounted(() => {
 main {
   display: flex;
   flex-direction: column;
-  gap: 10vh;
   padding: 0 6vw;
   padding-bottom: 15vh;
 }
 
 .first-section {
   padding-top: 20vh;
+  margin-bottom: 10vh;
+}
+
+.second-section {
+  margin-bottom: 10vh;
+}
+
+#contact-start {
+  position: relative;
+  top: -20vh;
 }
 </style>

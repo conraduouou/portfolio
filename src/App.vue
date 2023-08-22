@@ -14,11 +14,10 @@ const routes = {
 const hash = shallowRef(window.location.hash)
 
 function scrollToElement (id) {
-  const element = document.getElementById(id)
+  const element = document.getElementById(id + '-start')
 
   // if element with the id exists
   if (element) {
-    console.log(element)
     element.scrollIntoView({ behavior: 'smooth' })
   }
 }
