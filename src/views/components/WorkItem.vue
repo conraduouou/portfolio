@@ -69,6 +69,7 @@ function checkPreviewsScroll () {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   mask-image: linear-gradient(180deg, #000000 85%, transparent);
+  -webkit-mask-image: linear-gradient(180deg, #000000 85%, transparent);
 }
 
 .show {
@@ -77,6 +78,8 @@ function checkPreviewsScroll () {
 }
 
 .work-description {
+  font-weight: 600;
   font-size: 0.92em;
+  line-height: 1.5em;
 }
 </style>

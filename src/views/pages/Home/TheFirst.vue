@@ -16,11 +16,12 @@ section {
 
 h2 {
   font-size: 2.7em;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 0.75em;
 }
 
 p {
+  font-weight: 600;
   font-size: 1.2em;
 }
 </style>

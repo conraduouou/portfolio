@@ -40,7 +40,7 @@ section {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1.25em;
 }
 
