@@ -39,9 +39,9 @@ div {
 
 label {
   color: var(--color-primary);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.75em;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.75em;
 }
 
 input {
