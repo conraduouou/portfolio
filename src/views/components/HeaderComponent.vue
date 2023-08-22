@@ -75,7 +75,7 @@ header>div:nth-child(1) {
 .header-name {
   text-decoration: none;
   color: var(--color-primary);
-  font-size: 1em;
+  font-size: 0.75em;
   font-weight: 600;
 }
 
@@ -115,16 +115,14 @@ header>div:nth-child(1) {
   transform: translateY(-101%);
 }
 
-.header-items>* {
+.header-item {
   background-color: var(--color-primary);
   color: var(--color-background);
-}
-
-.header-item {
   padding: 20px 0;
   text-align: center;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.75em;
   width: 100%;
   border-bottom: 1.5px solid var(--color-background);
 }
@@ -141,6 +139,7 @@ header>div:nth-child(1) {
 }
 
 .button-container {
+  background-color: var(--color-primary);
   display: flex;
   justify-content: center;
   padding: 20px 0;
@@ -156,7 +155,7 @@ header>div:nth-child(1) {
   color: var(--color-primary);
   border-radius: 8px;
   transition: background-color 0.2s ease;
-  font-size: 16px;
+  font-size: 0.75em;
   font-weight: 600;
   cursor: pointer;
 }
@@ -165,22 +164,76 @@ header>div:nth-child(1) {
   background-color: var(--color-background-dark);
 }
 
-@media screen and (min-width: 420px) {
-  .header-logo {
-    background-color: var(--color-primary);
-    height: 24px;
-    width: 24px;
-    margin-right: 16px;
+@media screen and (min-width: 800px) {
+  header {
+    display: flex;
+    height: auto;
+    padding: 4vh 4vw 2.5vh 4vw;
+    width: 100%;
+    backdrop-filter: blur(2em);
+    -webkit-backdrop-filter: blur(2em);
+    box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2);
   }
 
-  h1 {
-    font-weight: 600;
-    font-size: 16px;
+  .header-name {
+    font-size: min(1em, 1.5vw);
+  }
+
+  header>div:nth-child(1) {
+    width: auto;
+    padding: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+  }
+
+  .header-items-overlay {
+    margin-left: auto;
+    position: static;
+    height: auto;
+  }
+
+  .header-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    position: static;
+    width: auto;
+    transition: none;
+    transform: none;
   }
 
   .header-item {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: min(1em, 1.5vw);
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: 0;
+    width: auto;
+    border: unset;
+  }
+
+  .button-container {
+    background-color: transparent;
+    display: block;
+    padding: 0;
+    width: auto;
+    border: unset;
+  }
+
+  .header-button {
+    padding: 1em 0.8em;
+    font-size: min(1em, 1.5vw);
+    background-color: var(--color-primary);
+    color: var(--color-background);
+  }
+
+  .header-button:hover {
+    background-color: var(--color-primary-600);
+  }
+
+  .expand-button {
+    display: none;
   }
 }
 </style>
