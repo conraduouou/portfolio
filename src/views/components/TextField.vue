@@ -61,7 +61,7 @@ input::placeholder {
 
 textarea {
   background-color: var(--color-neutral-100);
-  height: 12em;
+  height: 8.5em;
   border: unset;
   border-radius: 8px;
   padding: 1em 0 1em 1em;
