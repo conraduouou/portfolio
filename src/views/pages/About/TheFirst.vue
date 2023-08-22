@@ -5,10 +5,11 @@
   <section>
     <div class="section-image"></div>
     <div class="section-content">
-      <h2>Hi there!</h2>
+      <h2>Hey there!</h2>
       <p>
-        Fuelled by a passion for designing compelling products, I have a deep desire to
-        excel and continuously improve in my work. Learn more about my journey below.
+        Driven by a genuine passion for the harmony of things, development and the world alike,
+        I have an innate desire to beat yesterday's me and attain excellence. Check out my journey
+        below!
       </p>
     </div>
   </section>
