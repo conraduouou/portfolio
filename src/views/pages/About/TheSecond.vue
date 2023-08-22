@@ -31,6 +31,18 @@ const tags = [
   {
     id: 8,
     text: 'ui/ux design'
+  },
+  {
+    id: 9,
+    text: 'sql'
+  },
+  {
+    id: 10,
+    text: 'php'
+  },
+  {
+    id: 11,
+    text: 'postman'
   }
 ]
 </script>
@@ -40,11 +52,12 @@ const tags = [
     <div class="section-content">
       <h2>My Career So Far</h2>
       <p>
-        Always up for a challenge, I have worked for lean start-ups and was a member of the
-        first New Zealand start-up to attend Y Combinator, the largest start-up accelerator in
-        the world. From there, I worked my way up to Art Director and Team Lead at Appster where
-        I oversaw the design of 30+ mobile and desktop apps. Currently I am a Senior Product
-        Designer at LinkTree leading design for the LinkTree mobile app.
+        Keen for opportunities, I have worked for about any opening I could get. I was exposed to
+        software engineering and development during that experience, which instilled in me a drive
+        to learn more about the numerous steps included in the whole process, including design,
+        backend and a little management. <br><br>
+        With that background, I was then able to expand my skills from mobile to desktop and web
+        applications.
       </p>
     </div>
     <div class="section-tags">
