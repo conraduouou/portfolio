@@ -104,6 +104,31 @@ p {
   padding-bottom: 0.9em;
 }
 
+@media screen and (min-width: 768px) {
+  section {
+    flex-direction: row;
+    align-items: center;
+    gap: 8vw;
+  }
+
+  .section-content {
+    flex-shrink: 0;
+    width: 53vw;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .section-tags {
+    justify-content: start;
+  }
+}
+
 /* section {
   height: var(--section-height);
   display: flex;
