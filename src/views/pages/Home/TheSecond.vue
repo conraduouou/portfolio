@@ -49,6 +49,8 @@ h2 {
 
 .work-items {
   display: flex;
+  align-self: center;
+  width: min(100%, 800px);
   flex-direction: column;
   gap: 3em;
 }
