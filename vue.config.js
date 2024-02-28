@@ -1,1 +1,4 @@
-export const publicPath = process.env.NODE_ENV === 'production' ? '/portfolio/' : '/'
+import { defineConfig } from '@vue/cli-service'
+export default defineConfig({
+  publicPath: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/'
+})
