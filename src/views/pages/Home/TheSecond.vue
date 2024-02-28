@@ -3,7 +3,7 @@ import WorkItem from '../../components/WorkItem.vue'
 import { computed } from 'vue'
 
 const basePath = computed(() => {
-  return window.location.origin
+  return window.location.href
 })
 </script>
 
