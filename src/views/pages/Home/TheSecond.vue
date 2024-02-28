@@ -3,7 +3,14 @@ import WorkItem from '../../components/WorkItem.vue'
 import { computed } from 'vue'
 
 const basePath = computed(() => {
-  return window.location.href
+  let url = window.location.href
+
+  if (url.includes('#')) {
+    url = url.split('#')[0]
+    url = url.substring(0, url.length - 1)
+  }
+
+  return url
 })
 </script>
 
